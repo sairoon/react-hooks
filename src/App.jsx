@@ -2,18 +2,19 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  const increment = () => {
-    setCount((count) => count + 1);
-  }
-
- 
+ const [name, setName] = useState('')
+ const handleChange = (e) => {
+   setName(e.target.value)
+  // console.log(name); 
+ }
 
   return (
     <>
-      <button onClick={increment}>Click here</button>
-      <h1>{count}</h1>
+      <div className="container mx-auto mt-10">
+        <input onChange={handleChange} type="text" placeholder="Enter your text" />
+        <h1>{name}</h1>
+      </div>
     </>
   );
 }
