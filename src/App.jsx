@@ -1,15 +1,21 @@
-
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [count, setCount] = useState(0)
+
+  const increment = () => {
+    setCount((count) => count + 1);
+  }
+
+ 
 
   return (
     <>
-      <div>
-        Hello React
-      </div>
+      <button onClick={increment}>Click here</button>
+      <h1>{count}</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
