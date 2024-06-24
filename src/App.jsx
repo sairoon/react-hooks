@@ -5,11 +5,6 @@ function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  /*  const handleChange = (e) => {
-   setName(e.target.value)
-  // console.log(name); 
- } */
-
   return (
     <>
       <div className="container mx-auto mt-10">
