@@ -14,8 +14,8 @@ const UseEffectComp = () => {
       <div className="container mx-auto mt-4 border border-white rounded-md">
         <div className="p-4">
           <h1 className="text-3xl font-bold mb-4">useEffect hook</h1>
-          <button className="px-3 py-1 border border-white rounded-md" onClick={() => setCount(count + 1)}>Click</button>
-          <button className="px-3 py-1 border border-white rounded-md" onClick={() => setCount(counts + 1)}>Click</button>
+          <button className="px-3 py-1 me-2 border border-white rounded-lg" onClick={() => setCount(count + 1)}>Click</button>
+          <button className="px-3 py-1 me-2 border border-white rounded-lg" onClick={() => setCount(counts + 1)}>Click</button>
           {/* <p className="mt-4 ">You clicked {count} times</p> */}
         </div>
       </div>
